@@ -75,7 +75,8 @@ include vendor/qcom/opensource/core-utils/build/utils.mk
 endif
 
 6_1_FAMILY := \
-    pineapple
+    pineapple \
+    volcano
 
 # Kernel Families
 5_15_FAMILY := \
