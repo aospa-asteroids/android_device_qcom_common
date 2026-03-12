@@ -26,8 +26,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #Define Domain for Power module
-app_domain(vendor_powermodule_app);
-
 hal_client_domain(vendor_powermodule_app, vendor_hal_perf);
 hal_client_domain(vendor_powermodule_app, vendor_hal_poweroptservice)
 
