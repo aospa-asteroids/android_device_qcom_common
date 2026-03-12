@@ -30,11 +30,6 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# qva/vendor/common/location_blp_svc.te - sepolicy rules for blpsvc module
-
-type vendor_location_blp_svc, domain;
-type vendor_location_blp_svc_exec, exec_type, vendor_file_type, file_type;
-
 # allows loc_launcher to launch blpsvc
 domain_auto_trans(vendor_location, vendor_location_blp_svc_exec, vendor_location_blp_svc)
 allow vendor_location_blp_svc vendor_location:fd use;
